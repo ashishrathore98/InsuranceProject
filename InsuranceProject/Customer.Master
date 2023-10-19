@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Customer.Master.cs" Inherits="InsuranceProject.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles for the sidebar and web form */
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: darkslateblue;
+            padding-top: 20px;
+        }
+
+        .sidebar .profile-picture {
+            background-color:aliceblue;
+            width: 100px; /* Adjust the size of your profile picture */
+            height: 100px; /* Ensure it's a square */
+            border-radius: 100%; /* Make it round */
+            display: block;
+            margin: 0 auto;
+            overflow: hidden; /* Hide overflow outside the circle */
+        }
+
+        .sidebar a {
+            padding: 10px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #fff;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: #555;
+        }
+
+        /*.content {
+            margin-left: 270px;
+            padding: 20px;
+        }*/
+
+        /* Style the web form elements as needed */
+        /*.form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+        }
+        .card {
+            
+            margin: 10px;
+            border: none;
+            background-color:deepskyblue;
+        }*/
+
+        /* You can add more custom styling for your web form as needed */
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+   <div class="profile-picture">
+        <img src="your-profile-picture.jpg" alt="Profile Picture">
+    </div>
+     <h7 style="margin-left:88px">Customer</h7>
+    <a href="#">Dashboard</a>
+    <a href="#">Apply Policy</a>
+    <a href="#">History</a>
+    <a href="#">Ask Question</a>
+    <a href="#">Question History</a>
+</div>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
